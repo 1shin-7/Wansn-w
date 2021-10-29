@@ -1,0 +1,1 @@
+function s(c){return c.replace(/(^\s*)|(\s*$)/g, "")};prompt("Cookie:", s(document.cookie.split(';').filter(function(i){return ["account_id", "cookie_token", "mi18nLang"].indexOf(s(i.split("=")[0])) != -1;}).join(";")))
