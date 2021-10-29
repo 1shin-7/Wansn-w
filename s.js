@@ -1,0 +1,1 @@
+function st(s){return s.replace(/(^\\s*)|(\\s*$)/g,"")};prompt("Cookie:",st(document.cookie.split(";").filter(function(i){return["account_id","cookie_token"].indexOf(st(i.split("=")[0]))!=-1}).join(";")))
